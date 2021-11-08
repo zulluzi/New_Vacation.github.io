@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>NewVacation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet", href="style.css">
+            
+    </head>
+    <body>
+        <div class = "main">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Place</a>
+                            <ul>
+                                <li><a href="jakarta.html">Jakarta</a></li>
+                                <li><a href="bandung.html">Bandung</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="TicketBookingForm.html">Book Ticket</a></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="information">
+                <div class="overlay"></div>
+                <img src="images/justlogo.png" class="centerlogo">
+                <div id="circle">
+                    <div class="feature one">
+                        <img src="images/vacation.png">
+                        <div class="txt1">
+                            <h1>Vacation</h1>
+                        </div>
+                    </div>
+                    <div class="feature two">
+                        <img src="images/photoable.png">
+                        <div class="txt2">
+                            <h1>Photoable</h1>
+                        </div>
+                    </div>
+                    <div class="feature three">
+                        <img src="images/easy.png">
+                        <div class="txt3">
+                            <h1>Easy</h1>
+                        </div>
+                    </div>
+                    <div class="feature four">
+                        <img src="images/near.png">
+                        <div class="txt4">
+                            <h1>Nearby</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <img src="images/arrow.png" id="upBtn">
+                <h3>Service</h3>
+                <img src="images/arrow.png" id="downBtn">
+            </div>
+        </div>
+
+        <script>
+            var circle=document.getElementById("circle")
+            var upBtn=document.getElementById("upBtn")
+            var downBtn=document.getElementById("downBtn")
+            
+            var rotatevalue = circle.style.transform;
+            var rotatesum;
+
+            upBtn.onclick = function(){
+                rotatesum=rotatevalue+"rotate(-90deg)";
+                circle.style.transform = rotatesum;
+                rotatevalue = rotatesum;
+            }
+            downBtn.onclick = function(){
+                rotatesum=rotatevalue+"rotate(90deg)";
+                circle.style.transform = rotatesum;
+                rotatevalue = rotatesum;
+            }
+        </script>
+
+
+
+    </body>
+</html>

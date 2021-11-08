@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to right,#1993f7,#0678fab0);
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+nav p{
+    font-family: sans-serif;
+    color: #222;
+    font-size: 24px;
+    line-height: 55px;
+    float: left;
+    padding: 0px 20px;
+}
+nav ul{
+    float: left;
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+    top: -5px;
+}
+nav ul li a{
+    display: block;
+    font-family: sans-serif;
+    color: #222;
+    font-size: 24px;
+    padding: 18px 14px;
+    text-decoration: none;
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: -15px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 0px 0px 4px 4px;
+}
+nav ul li:hover ul{
+    display: block;
+
+}
+nav ul li ul li{
+    border-radius: 4px;
+}
+nav ul li ul li a{
+    width: 100px;
+}
+nav ul li ul li a{
+    padding: 8px 14px;
+}
+nav ul li ul li a:hover{
+    background-color: #f3f3f3;
+}
+
+.judul{
+    position: absolute;
+    left: 450px;
+}
+
+.logo{
+    flex-basis: 20%;
+}
+
+.logo img{
+    width: 100px;
+}
+.NV{
+    position: absolute;
+    left: 590px;
+    top: 110px;
+}
+
+.content{
+    flex-basis: 20%;
+}
+
+.content img{
+    width: 300px;
+}
+.gapura{
+    position: absolute;
+    left: 40px;
+}
+.satu{
+    position: absolute;
+    top: 650px;
+}
+
+.dua{
+    position: absolute;
+    top: 650px;
+    right: 600px;
+}
+
+.tiga{
+    position: absolute;
+    top: 650px;
+    right: 265px;
+}
+.moja{
+    position: absolute;
+    left: 40px;
+}
+.one{
+    position: absolute;
+    top: 1350px;
+}
+
+.two{
+    position: absolute;
+    top: 1350px;
+    right: 600px;
+}
+
+.three{
+    position: absolute;
+    top: 1350px;
+    right: 265px;
+}

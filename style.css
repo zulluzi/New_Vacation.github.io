@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right,#1993f7,#0678fab0);
+}
+
+
+
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    flex-basis: 20%;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+    right: -100px;
+}
+
+
+.nav-links ul li a{
+    list-style: none;
+    display: block;
+    margin: 0 20px;
+    position: relative;
+    text-decoration: none;
+    padding: 17px 12px;
+}
+
+.nav-links ul a:hover{
+    color: black;
+    text-decoration: none;
+    background-color: #f3f3f3;
+    /* background-size: 5px; */
+
+}
+
+.nav-links ul li ul{
+    display: none;
+    position: absolute;
+    left: -15px;
+    top: 50px;
+    background-color: white;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.nav-links ul li:hover ul{
+    display: block;
+    
+}
+
+.nav-links ul li ul a:hover{
+    color: black;
+    text-decoration: none;
+    background-color: #f3f3f3;
+}
+.nav-links ul li ul li{
+    border-radius: 4px;
+}
+.nav-links ul li ul li a{
+    padding: 8px 14px;
+    text-align: center;
+    position: relative;
+    right: 105px;
+}
+
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 54%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+#circle{
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 200;
+    left: 200;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition: 1s;
+}
+
+.feature img{
+    width: 400px;
+}
+
+.feature{
+    position: relative;
+    display: flex;
+    color: white;
+}
+
+.feature div{
+    margin-left: 30px;
+}
+
+.one{
+    top: 260px;
+    right: -450px;
+    width: 100px;
+    color: white;
+}
+.txt1{
+    position: relative;
+    top: 40px;
+    right: 270px;
+}
+
+.two{
+    top: -500px;
+    left: 360px;
+    width: 100px;
+    transform: rotate(-90deg);
+    color: white;
+}
+.txt2{
+    position: relative;
+    top: 70px;
+    right: 270px;
+}
+.three{
+    bottom: 580px;
+    right: -130px;
+    width: 50px;
+    transform: rotate(-270deg);
+    color: white;
+}
+.txt3{
+    position: relative;
+    top: 60px;
+    right: 240px;
+}
+
+.four{
+    bottom: 1250px;
+    left: -350px;
+    width: 500px;
+    transform: rotate(-180deg);
+    color: white;
+}
+.txt4{
+    position: relative;
+    top: 30px;
+    right: 270px;
+}
+
+
+.centerlogo{
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    left:40%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.controls{
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.controls h3{
+    margin: 15px 0;
+    color: #fff;
+}
+#upBtn{
+    width: 15px;
+    cursor: pointer;
+}
+
+#downBtn{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid #fff;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid #fff;
+    border-left: 500px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ticket Booking Form</title>
+        <link rel="stylesheet" href="Ticketstyle.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <div class="Bookingbox">
+            <h1>
+                Booking Tickets
+            </h1>
+            <div class="booking-form-box">
+                <div class="radio-btn">
+                    <input type="radio" class="btn" name="check">
+                    <span>Roundtrip</span>
+                    <input type="radio" class="btn" name="check">
+                    <span>One way</span>
+                    <input type="radio" class="btn" name="check">
+                    <span>Multy-City</span>
+                </div>
+                <div class="booking-form">
+                    <label>Trip From</label>
+                    <input type="text" class="form-control" placeholder="City">
+                    <label>Trip to</label>
+                    <input type="text" class="form-control" placeholder="City">
+
+                    <div class="input-grp">
+                    <label>Departing</label>
+                    <input type="date" class="form-control select-date">
+                    </div>
+
+                    <div class="input-grp">
+                        <label>Returing</label>
+                        <input type="date" class="form-control select-date">
+                    </div>
+
+                    <div class="input-grp">
+                        <label>Adult</label>
+                        <input type="text" class="form-control" value="1">
+                    </div>
+
+                    <div class="input-grp">
+                        <label>Child</label>
+                        <input type="text" class="form-control" value="0">
+                    </div>
+
+                    <div class="input-grp">
+                        <label>Travel Class</label>
+                        <select class="custom-select">
+                            <option value="1">Economy Class</option>
+                            <option value="2">Business Class</option>
+                        </select>
+                    </div>
+
+                    <div class="input-grp">
+                        <button type="button" class="btn btn-primary flight"><a href="Pembayaran.html">Next</a></button>             
+                    </div>
+
+                </div>
+            </div>   
+        </div>
+    </body>
+</html>
